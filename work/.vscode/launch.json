@@ -1,0 +1,34 @@
+{
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Spring Boot-Ex1Application<ex1>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "com.naru.ex1.Ex1Application",
+      "projectName": "ex1",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot-Ex2Application<ex2>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "com.naru.ex2.Ex2Application",
+      "projectName": "ex2",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot-Ex3Application<ex3>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "com.naru.ex3.Ex3Application",
+      "projectName": "ex3",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
+    }
+  ]
+}

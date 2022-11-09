@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.naru.ex3.mapper.EmpMapper">
+
+  <!--
+    한 페이지당 보여질 자원들의 목록
+   -->
+   <select id="list" resultType="com.naru.ex3.vo.EmpVO"
+    parameterType="java.util.Map">
+
+        SELECT a.* 
+        FROM (
+            SELECT @RN:=@RN+1 AS rownum, b.*
+            FROM (
+                SELECT *
+                FROM employees 
+                ORDER BY hire_date DESC
+            ) b, ( SELECT @RN:=0 ) r
+        ) a
+        WHERE rownum BETWEEN #{begin} AND #{end}
+
+   </select>
+
+   <!--
+    특정한 유저 검색
+    -->
+    <select id="getEmp" resultType="com.naru.ex3.vo.EmpVO"
+        parameterType="String">
+
+        SELECT * FROM employees
+        WHERE emp_no = #{emp_no}
+
+    </select>
+  
+    <!-- 
+        사원 저장
+    -->
+    <insert id="add" parameterType="com.naru.ex3.vo.EmpVO">
+        INSERT INTO employees( emp_no, first_name, last_name,
+                            birth_date, gender, hire_date )
+        VALUES ( #{emp_no}, #{first_name}, #{last_name},
+                            #{birth_date}, #{gender}, #{hire_date} )
+    </insert>
+</mapper>
+
+
