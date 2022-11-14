@@ -1,0 +1,30 @@
+http://spring.io로 접속
+
+ - 메뉴 중에서 [PROJECTS] 선택!
+ - [SPRING FRAMEWORK]선택
+ - 나타나는 화면에서 깃허브 아이콘 선택
+ - 화면을 내려서 [Access to Binaries]항목에 있는
+	[Spring Framework Artifacts]링크를 선택
+ - 나타나는 화면을 내려보면 [Releases]항목이 나타난다.
+  여기에 명시된 [http://repo.spring.io/release]부분을 복사한다.
+ - 새로운 브라우저 탭을 선택하여 복사한 URL을 붙여넣어 이동한다.
+ - 그리고 다음과 같은 순으로 선택하자!
+  [org] - [springframework] - [spring] - [4.3.9.RELEASE] 선택
+ - 맨 위에 있는
+  [spring-framework-4.3.9.RELEASE-dist.zip]를 선택하여
+   다운 받아 압축을 해제한다.
+
+
+*** Spring Core에서 필요한 라이브러리들
+ - spring-beans-4.3.9.RELEASE.jar
+ - spring-context-4.3.9.RELEASE.jar 
+ - spring-core-4.3.9.RELEASE.jar
+ - spring-expression-4.3.9.RELEASE.jar
+ - commons-logging-1.X.X.jar (apache.org로 접속!
+		project들 중 commons선택!
+		화면을 아래쪽의 표에서
+		Logging을 선택한다.
+		download메뉴 선택!
+		Binaries의
+		commons-logging-1.X.X-bin.zip
+		다운 받고 압축해제)  
